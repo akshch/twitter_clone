@@ -14,6 +14,7 @@ gem 'jbuilder',                '2.7.0'
 gem 'bootsnap',                '1.3.1', require: false
 
 group :development, :test do
+  #gem 'sqlite3',               '1.3.13'
   gem 'byebug',                '10.0.2'
 end
 
@@ -24,6 +25,9 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
 end
 
+group :development do 
+  gem 'pg',                    '0.20.0'
+end
 group :test do
   gem 'capybara',              '3.7.1'
   gem 'selenium-webdriver',    '3.14.0'
