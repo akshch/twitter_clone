@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.7'
 gem 'rails', '5.2.1'
+gem 'bootstrap-sass', '3.3.7'
 
 gem 'puma',                    '3.12.0'
 gem 'sass-rails',              '5.0.7'
@@ -12,7 +13,7 @@ gem 'turbolinks',              '5.2.0'
 gem 'jbuilder',                '2.7.0'
 gem 'bootsnap',                '1.3.1', require: false
 gem 'pg',                    '0.20.0'
-
+gem 'rails-controller-testing'
 group :development, :test do
   gem 'byebug',                '10.0.2'
 end
