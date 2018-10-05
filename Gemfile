@@ -13,8 +13,9 @@ gem 'coffee-rails',            '4.2.2'
 gem 'turbolinks',              '5.2.0'
 gem 'jbuilder',                '2.7.0'
 gem 'bootsnap',                '1.3.1', require: false
-gem 'pg',                    '0.20.0'
+gem 'pg',                      '0.20.0'
 gem 'rails-controller-testing'
+gem 'jquery-rails'
 group :development, :test do
   gem 'byebug',                '10.0.2'
 end
