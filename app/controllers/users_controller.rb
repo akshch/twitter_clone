@@ -9,7 +9,8 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find(params[:id])
-    redirect_to root_url and return unless @user.activated
+    redirect_to root_url and return unless @user.activated  #13.23
+    @microposts = @user.microposts.paginate(page: params[:page]) 
   end
 
   def new
@@ -58,13 +59,13 @@ class UsersController < ApplicationController
   # Before filters
 
   # Confirms a logged in user.
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = "Please log in."
-    redirect_to login_url
-    end
-  end
+  #def logged_in_user
+    #unless logged_in?
+     # store_location
+      #flash[:danger] = "Please log in."
+    #edirect_to login_url
+    #end
+  #end
   
   # Define the correct user.
   def correct_user
