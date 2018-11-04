@@ -20,14 +20,16 @@ gem 'jbuilder',                '2.7.0'
 gem 'bootsnap',                '1.3.1', require: false
 gem 'pg',                      '0.20.0'
 gem 'fog',                     '1.42'
-gem 'rails-controller-testing'
-gem 'jquery-rails'
+gem 'rails-controller-testing' '1.0.2'
+gem 'jquery-rails'             '4.3.3'
+gem 'figaro',                  '1.1.1'
+
 group :development, :test do
   gem 'byebug',                '10.0.2'
 end
 
 group :development do
-  gem 'sqlite3',                 '1.3.13'
+  gem 'sqlite3',               '1.3.13'
   gem 'web-console',           '3.7.0'
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
